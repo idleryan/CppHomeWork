@@ -59,6 +59,14 @@ public:
     {
  //       char TempPath[260];
  //       char Info[260] = "E:\\Sagittarius\\%s\\%s\\%s\\W%d\\(%d,%d)\\%s";
+
+		time_t rawtime;
+		struct tm *TimeInfo;
+		char MeasTime[10];
+		time (&rawtime);
+		TimeInfo = localtime(&rawtime);
+		strftime(MeasTime,10,"%Y%m%d",TimeInfo);
+
    		sprintf(TempPath,Info,User.c_str(),FileFolder.c_str(),LotNumber.c_str(),WaferNumber,DieX,DieY,Usage.c_str());
 
   	    for(int i=4; i<strlen(TempPath); i++)
@@ -79,3 +87,5 @@ private:
     char TempPath[260];
     char Info[260] = "E:\\Sagittarius\\%s\\%s\\%s\\W%d\\(%d,%d)\\%s";
 };
+
+

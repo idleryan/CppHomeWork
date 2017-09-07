@@ -12,16 +12,24 @@ using namespace std;
 
 int main(void)
 {
-	FileFolder SetFolder;
+	//	time_t rawtime;
+	//	struct tm *TimeInfo;
+	//	char TimeOutput[260];
+	//	time (&rawtime);
+	//	TimeInfo = localtime(&rawtime);
+	//	strftime(TimeOutput,260,"%x",TimeInfo);
+	//	cout << TimeOutput << endl;
+	//	cout << ctime(&rawtime) << endl;
 
-	SetFolder.getUser();
-	SetFolder.getProj();
-	SetFolder.getLot();
-	SetFolder.getWafer();
-	SetFolder.getDieX();
-	SetFolder.getDieY();
-	SetFolder.getUsage();
-	SetFolder.Folderadd();
+	FileFolder SetFolder;
+//	SetFolder.getUser();
+//	SetFolder.getProj();
+//	SetFolder.getLot();
+//	SetFolder.getWafer();
+//	SetFolder.getDieX();
+//	SetFolder.getDieY();
+//	SetFolder.getUsage();
+//	SetFolder.Folderadd();
 
 return 0;
 }
